@@ -1,6 +1,23 @@
 <?php
 
    require('connection.inc.php');
+   require('function.inc.php');
+   if(isset($_POST['submit'])){
+      $username=get_safe_value($con,$_POST['username']);
+      $password=get_safe_value($con,$_POST['password']);
+      $sql="select * from admin_users where username='$username' and password='$password'";
+      $res=mysqli_query($con,$sql);
+      $count=mysqli_num_rows($res);
+      if($count>0){
+         $_SESSION['ADMIN_LOGIN']='yes';
+         $_SESSION['ADMIN_USERNAME']=$username;
+         header('location:categories.php');
+         die();
+      }else{
+         $msg="Please enter correct login details";	
+      }
+      
+   }
 
 ?>
 
@@ -28,16 +45,16 @@
          <div class="container">
             <div class="login-content">
                <div class="login-form mt-150">
-                  <form>
+                  <form method="post">
                      <div class="form-group">
-                        <label>Email address</label>
-                        <input type="email" class="form-control" placeholder="Email">
+                        <label>Username</label>
+                        <input type="text" name="username" class="form-control" placeholder="Username" required>
                      </div>
                      <div class="form-group">
                         <label>Password</label>
-                        <input type="password" class="form-control" placeholder="Password">
+                        <input type="password" name="password" class="form-control" placeholder="Password" required>
                      </div>
-                     <button type="submit" class="btn btn-success btn-flat m-b-30 m-t-30">Sign in</button>
+                     <button type="submit" name="submit" class="btn btn-success btn-flat m-b-30 m-t-30">Sign in</button>
 					</form>
                </div>
             </div>
