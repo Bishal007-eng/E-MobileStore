@@ -1,7 +1,7 @@
 <?php
 
    require('connection.inc.php');
-   require('function.inc.php');
+   require('functions.inc.php');
 
    $msg='';
    if(isset($_POST['submit'])){
