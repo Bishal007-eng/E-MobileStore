@@ -2,6 +2,8 @@
 
    require('connection.inc.php');
    require('function.inc.php');
+
+   $msg='';
    if(isset($_POST['submit'])){
       $username=get_safe_value($con,$_POST['username']);
       $password=get_safe_value($con,$_POST['password']);
@@ -55,7 +57,8 @@
                         <input type="password" name="password" class="form-control" placeholder="Password" required>
                      </div>
                      <button type="submit" name="submit" class="btn btn-success btn-flat m-b-30 m-t-30">Sign in</button>
-					</form>
+					   </form>
+                  <div class="field_error"><?php echo $msg?></div>
                </div>
             </div>
          </div>
