@@ -115,8 +115,9 @@
 
     </div>
 </div>
-
 <!-- Start Slider Area -->
+
+
 <!-- Start Category Area -->
 <section class="htc__category__area ptb--100">
     <div class="container">
@@ -124,7 +125,7 @@
             <div class="col-xs-12">
                 <div class="section__title--2 text-center">
                     <h2 class="title__line">New Arrivals</h2>
-                    <p>But I must explain to you how all this mistaken idea</p>
+                    <p>Here We have some New amazing arrivals that you might enjoy!</p>
                 </div>
             </div>
         </div>
@@ -170,7 +171,7 @@
             <div class="col-xs-12">
                 <div class="section__title--2 text-center">
                     <h2 class="title__line">Best Seller</h2>
-                    <p>But I must explain to you how all this mistaken idea</p>
+                    <p>Here we have our all time best seller phones</p>
                 </div>
             </div>
         </div>
@@ -182,8 +183,8 @@
                 <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
                     <div class="category">
                         <div class="ht__cat__thumb">
-                            <a href="categories.php">
-                                <img src="images/product/13.png" alt="product images">
+                            <a href="product.php">
+                                <img src="images/product/Iphone/13 Matt black.png" alt="product images">
                             </a>
                         </div>
                         <div class="fr__hover__info">
@@ -196,7 +197,7 @@
                             </ul>
                         </div>
                         <div class="fr__product__inner">
-                            <h4><a href="product-details.html">Iphone 13 Pro Max</a></h4>
+                            <h4><a href="product.php">Iphone 13 Pro Max</a></h4>
                             <ul class="fr__pro__prize">
                                 <li class="old__prize">$659.99</li>
                                 <li>$625</li>
@@ -211,8 +212,8 @@
                 <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
                     <div class="category">
                         <div class="ht__cat__thumb">
-                            <a href="product-details.html">
-                                <img src="images/product/poco.jpg" style="height: 250px;" alt="product images">
+                            <a href="product.php">
+                                <img src="images/product/POCO/poco.jpg" style="height: 250px;" alt="product images">
                             </a>
                         </div>
                         <div class="fr__hover__info">
@@ -225,7 +226,7 @@
                             </ul>
                         </div>
                         <div class="fr__product__inner">
-                            <h4><a href="product-details.html">POCO M5</a></h4>
+                            <h4><a href="product.php">POCO M5</a></h4>
                             <ul class="fr__pro__prize">
                                 <li class="old__prize">$200</li>
                                 <li>$150.99</li>
@@ -240,8 +241,8 @@
                 <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
                     <div class="category">
                         <div class="ht__cat__thumb">
-                            <a href="product-details.html">
-                                <img src="images/product/xiaomi.jpg" alt="product images">
+                            <a href="product.php">
+                                <img src="images/product/xiaomi/xiaomi X12 blue.jpg" alt="product images">
                             </a>
                         </div>
                         <div class="fr__hover__info">
@@ -254,7 +255,7 @@
                             </ul>
                         </div>
                         <div class="fr__product__inner">
-                            <h4><a href="product-details.html">Xiaomi X12</a></h4>
+                            <h4><a href="product.php">Xiaomi X12</a></h4>
                                 <ul class="fr__pro__prize">
                                 <li class="old__prize">$300.3</li>
                                 <li>$250.9</li>
@@ -269,8 +270,8 @@
                 <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
                     <div class="category">
                         <div class="ht__cat__thumb">
-                            <a href="product-details.html">
-                                <img src="images/product/iphone X.jpg" alt="product images">
+                            <a href="product.php">
+                                <img src="images/product/Iphone/iphone X.jpg" alt="product images">
                             </a>
                         </div>
                         <div class="fr__hover__info">
@@ -283,7 +284,7 @@
                             </ul>
                         </div>
                         <div class="fr__product__inner">
-                            <h4><a href="product-details.html">Iphone X Max</a></h4>
+                            <h4><a href="product.php">Iphone X Max</a></h4>
                             <ul class="fr__pro__prize">
                                 <li class="old__prize">$450.99</li>
                                 <li>$400</li>

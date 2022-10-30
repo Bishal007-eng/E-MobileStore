@@ -1,10 +1,25 @@
 <?php 
+    require('top.php');
 
-    require('top.php');	
-    
-    
+    if(isset($_GET['id']) && $_GET['id']!=''){
+        $cat_id=mysqli_real_escape_string($con,$_GET['id']);
+        if($cat_id>0){
+            $get_product=get_product($con,'',$cat_id);
+        }else{
+            ?>
+            <script>
+            window.location.href='categories.php';
+            </script>
+            <?php
+        }
+    }else{
+        ?>
+        <script>
+        window.location.href='index.php';
+        </script>
+        <?php
+    }										
 ?>
-
 
 
 <div class="body__overlay"></div>
