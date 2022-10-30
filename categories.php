@@ -1,34 +1,12 @@
 <?php 
 
-    require('top.php');
-
-    if(isset($_GET['id']) && $_GET['id']!='')
-    {
-        $cat_id=mysqli_real_escape_string($con,$_GET['id']);
-
-        if($cat_id>0)
-        {
-            $get_product=get_product($con,'',$cat_id);
-        }
-        else
-        {
-            ?>
-            <script>
-            window.location.href='index.php';
-            </script>
-            <?php
-        }
-
-    }
-    else
-    {
-        ?>
-        <script>
-        window.location.href='index.php';
-        </script>
-        <?php
-    }										
+    require('top.php');	
+    
+    
 ?>
+
+
+
 <div class="body__overlay"></div>
         
     <!-- Start Bradcaump area -->
@@ -54,7 +32,9 @@
     <section class="htc__product__grid bg__white ptb--100">
         <div class="container">
             <div class="row">
+                
 				<?php if(count($get_product)>0){?>
+
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="htc__product__rightidebar">
                         <div class="htc__grid__top">
@@ -108,4 +88,7 @@
     </section>
     <!-- End Product Grid -->
     <!-- End Banner Area -->
+
+
+
 <?php require('footer.php')?>        

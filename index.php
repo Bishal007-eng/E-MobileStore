@@ -161,6 +161,8 @@
     </div>
 </section>
 <!-- End Category Area -->
+
+
 <!-- Start Product Area -->
 <section class="ftr__product__area ptb--100">
     <div class="container">
@@ -174,11 +176,13 @@
         </div>
         <div class="row">
             <div class="product__wrap clearfix">
+
+
                 <!-- Start Single Category -->
                 <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
                     <div class="category">
                         <div class="ht__cat__thumb">
-                            <a href="product-details.html">
+                            <a href="categories.php">
                                 <img src="images/product/13.png" alt="product images">
                             </a>
                         </div>
@@ -200,9 +204,9 @@
                         </div>
                     </div>
                 </div>
-
-
                 <!-- End Single Category -->
+
+
                 <!-- Start Single Category -->
                 <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
                     <div class="category">
@@ -229,9 +233,9 @@
                         </div>
                     </div>
                 </div>
-
-
                 <!-- End Single Category -->
+
+
                 <!-- Start Single Category -->
                 <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
                     <div class="category">
@@ -259,6 +263,8 @@
                     </div>
                 </div>
                 <!-- End Single Category -->
+
+
                 <!-- Start Single Category -->
                 <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
                     <div class="category">
@@ -286,6 +292,8 @@
                     </div>
                 </div>
                 <!-- End Single Category -->
+
+
             </div>
         </div>
     </div>
