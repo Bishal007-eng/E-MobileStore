@@ -28,7 +28,7 @@
 		}
 	}
 
-	$sql="select product.*,categories.categories from product,categories where product.categories_id=categories.id order by product.id desc";
+	$sql="select product.*,categories.categories from product,categories where product.categories_id=categories.id order by product.id asc";
 	$res=mysqli_query($con,$sql);
 ?>
 

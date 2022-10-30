@@ -166,7 +166,7 @@
 								<select class="form-control" name="categories_id">
 										<option>Select Category</option>
 										<?php
-											$res=mysqli_query($con,"select id,categories from categories order by categories asc");
+											$res=mysqli_query($con,"select id,categories from categories order by categories desc");
 											while($row=mysqli_fetch_assoc($res))
 											{
 												if($row['id']==$categories_id)
