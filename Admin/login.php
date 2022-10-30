@@ -13,7 +13,7 @@
       if($count>0){
          $_SESSION['ADMIN_LOGIN']='yes';
          $_SESSION['ADMIN_USERNAME']=$username;
-         header('location:categories.php');
+         header('location:index.php');
          die();
       }else{
          $msg="Please enter correct login details";	

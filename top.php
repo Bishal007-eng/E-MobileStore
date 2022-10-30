@@ -56,6 +56,8 @@
                   </ul>
                 </nav>
 
+
+
                 <div class="mobile-menu clearfix visible-xs visible-sm">
                   <nav id="mobile_dropdown">
                     <ul>
@@ -72,6 +74,9 @@
                   </nav>
                 </div>  
               </div>
+							
+
+
               <div class="col-md-3 col-lg-2 col-sm-4 col-xs-4">
                 <div class="header__right">
                   <div class="header__account">

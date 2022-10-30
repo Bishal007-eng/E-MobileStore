@@ -48,7 +48,7 @@ if(isset($_SESSION['ADMIN_LOGIN']) && $_SESSION['ADMIN_LOGIN']!=''){
               <a href="#" > Order Master</a>
             </li>
             <li class="menu-item-has-children dropdown">
-              <a href="#" > User Master</a>
+              <a href="users.php" > User Master</a>
             </li>
             <li class="menu-item-has-children dropdown">
               <a href="contact_us.php" > Contact Us</a>
@@ -62,8 +62,8 @@ if(isset($_SESSION['ADMIN_LOGIN']) && $_SESSION['ADMIN_LOGIN']!=''){
       <header id="header" class="header">
         <div class="top-left">
           <div class="navbar-header">
-            <a class="navbar-brand" href="index.html"><h2>Admin Panal</h2></a>
-            <a class="navbar-brand hidden" href="index.html"> </a>
+            <a class="navbar-brand" href="index.php"><h2>Admin Panal</h2></a>
+            <a class="navbar-brand hidden" href="index.php"> </a>
             <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
           </div>
         </div>
