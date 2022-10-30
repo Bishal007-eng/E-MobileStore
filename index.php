@@ -146,9 +146,9 @@
                             </div>
                                     
                             <div class="fr__product__inner">
-                                <h4><a href="product.php"><?php echo $list['name']?></a></h4>
+                                <h4><a href="product.php">Rs.<?php echo $list['name']?></a></h4>
                                 <ul class="fr__pro__prize">
-                                    <li class="old__prize"><?php echo $list['mrp']?></li>
+                                    <li class="old__prize">Rs.<?php echo $list['mrp']?></li>
                                     <li><?php echo $list['price']?></li>
                                 </ul>
                             </div>

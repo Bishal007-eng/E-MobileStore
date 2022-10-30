@@ -72,8 +72,8 @@
                     <div class="ht__product__dtl">
                         <h2><?php echo $get_product['0']['name']?></h2>
                         <ul  class="pro__prize">
-                            <li class="old__prize"><?php echo $get_product['0']['mrp']?></li>
-                            <li><?php echo $get_product['0']['price']?></li>
+                            <li class="old__prize">Rs.<?php echo $get_product['0']['mrp']?></li>
+                            <li>Rs. <?php echo $get_product['0']['price']?></li>
                         </ul>
                         <p class="pro__info"><?php echo $get_product['0']['short_desc']?></p>
                         <div class="ht__pro__desc">

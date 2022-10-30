@@ -101,8 +101,7 @@
 			</div>
         </div>
     </section>
-    <!-- End Product Grid -->
-    <!-- End Banner Area -->
+
 
 
 

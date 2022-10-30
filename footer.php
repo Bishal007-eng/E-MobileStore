@@ -11,11 +11,11 @@
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
                                     <div class="ft__social__link">
                                         <ul class="social__link">
-                                            <li><a href="#"><i class="icon-social-twitter icons"></i></a></li>
+                                            <li><a href="https://twitter.com/Bishal_thapa007"><i class="icon-social-twitter icons"></i></a></li>
 
-                                            <li><a href="#"><i class="icon-social-instagram icons"></i></a></li>
+                                            <li><a href="https://www.instagram.com/bishal_thapa007/"><i class="icon-social-instagram icons"></i></a></li>
 
-                                            <li><a href="#"><i class="icon-social-facebook icons"></i></a></li>
+                                            <li><a href="https://www.facebook.com/profile.php?id=100044386269936"><i class="icon-social-facebook icons"></i></a></li>
 
                                             <li><a href="#"><i class="icon-social-google icons"></i></a></li>
 
