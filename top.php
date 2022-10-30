@@ -3,6 +3,8 @@
 
 	require('connection.inc.php');
 	require('functions.inc.php');
+
+	
 	$cat_res=mysqli_query($con,"select * from categories where status=1 order by categories asc");
 	$cat_arr=array();
 	while($row=mysqli_fetch_assoc($cat_res)){
@@ -36,7 +38,7 @@
         <div class="container">
           <div class="row">
             <div class="menumenu__container clearfix">
-              <div class="col-lg-2 col-md-2 col-sm-3 col-xs-5"> 
+              <div class="col-lg-2 col-md-2 col-sm-3 col-xs-2"> 
                 <div class="logo">
                   <a href="index.php"><img src="images/logo/banner 3.jpg" alt="logo images"></a>
                 </div>
