@@ -29,7 +29,7 @@
     }
   }
 
-  $sql="select * from categories order by categories asc";
+  $sql="select * from categories order by categories desc";
   $res=mysqli_query($con,$sql);
 ?>
 
@@ -40,6 +40,7 @@
         <div class="card">
           <div class="card-body">
             <h4 class="box-title">Categories </h4>
+            <h4 class="box-link"><a href="manage_categories.php">Add Categories </a></h4>
           </div>
 
           <div class="card-body--">
@@ -51,7 +52,7 @@
                     <th class="serial">#</th>
                     <th>ID</th>
                     <th>Categories</th>
-                    <th>Status</th>                    
+                    <th></th>                    
                   </tr>
                 </thead>
 
@@ -70,12 +71,16 @@
                       <?php  
                         if ($row['status']==1)
                         {
-                          echo "Active";
+                          echo "<span class = 'badge badge-complete'><a href = '?type=status&operation=deactive&id=".$row['id']."'>Active</a></span>&nbsp;";
                         }
                         else
                         {
-                          echo "Deactive";
+                          echo "<span class = 'badge badge-pending'><a href = '?type=status&operation=active&id=".$row['id']."'>Deactive</a></span>&nbsp;";
                         }
+
+                        echo "<span class='badge badge-edit'><a href='manage_categories.php?id=".$row['id']."'>Edit</a></span>&nbsp;";
+                        
+                        echo "<span class='badge badge-delete'><a href = '?type=delete&id=".$row['id']."'>Delete</a></span>";
                       ?>
                     </td>
                   </tr>

@@ -38,12 +38,12 @@
 				}
 				else
 				{
-					$msg="Categories already exist";
+					$msg="Category already exist";
 				}
 			}
 			else
 			{
-				$msg="Categories already exist";
+				$msg="Category already exist";
 			}
 		}
 		
