@@ -8,7 +8,7 @@
         }else{
             ?>
             <script>
-            window.location.href='categories.php';
+            window.location.href='index.php';
             </script>
             <?php
         }
