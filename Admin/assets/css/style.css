@@ -450,9 +450,9 @@ p:focus {
 
 a,
 button {
-    text-decoration: none;
+    text-decoration: underline; 
     outline: none!important;
-    color: #878787;
+    color: #2e6eff;
     -webkit-transition: all .25s ease;
     transition: all .25s ease
 }
