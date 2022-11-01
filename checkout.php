@@ -47,6 +47,8 @@
 		
 		unset($_SESSION['cart'])
 		?>
+
+
 		<script>
 			window.location.href='thank_you.php';
 		</script>
@@ -92,125 +94,133 @@
 								$accordion_class='accordion__hide';
 							?>
 
-							<div class="accordion__title">
-                Checkout Method
-              </div>
+								<div class="accordion__title">
+									Checkout Method
+								</div>
 
 
-              <div class="accordion__body">
-                <div class="accordion__body__form">
-                  <div class="row">
-
-                    <div class="col-md-6">
-                      <div class="checkout-method__login">
-                        <form id="login-form" method="post">
-                          <h5 class="checkout-method__title">Login</h5>
-
-                          <div class="single-input">
-                            <input type="text" name="login_email" id="login_email" placeholder="Your Email*" style="width:100%">
-														<span class="field_error" id="login_email_error"></span>
-                          </div>
-															
-                          <div class="single-input">
-                            <input type="password" name="login_password" id="login_password" placeholder="Your Password*" style="width:100%">
-														<span class="field_error" id="login_password_error"></span>
-                          </div>
-															
-                          <p class="require">* Required fields</p>
-
-                          <div class="dark-btn">
-                            <button type="button" class="fv-btn" onclick="user_login()">Login</button>
-                          </div>
-
-													<div class="form-output login_msg">
-														<p class="form-messege field_error"></p>
-													</div>
-
-                        </form>
-                     </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <div class="checkout-method__login">
-                        <form action="#">
-
-                          <h5 class="checkout-method__title">Register</h5>
-
-                          <div class="single-input">
-                            <input type="text" name="name" id="name" placeholder="Your Name*" style="width:100%">
-														<span class="field_error" id="name_error"></span>
-                          </div>
-													<div class="single-input">
-                          	<input type="text" name="email" id="email" placeholder="Your Email*" style="width:100%">
-														<span class="field_error" id="email_error"></span>
-                          </div>
-															
-                          <div class="single-input">
-                            <input type="text" name="mobile" id="mobile" placeholder="Your Mobile*" style="width:100%">
-														<span class="field_error" id="mobile_error"></span>
-                          </div>
-
-													<div class="single-input">
-                            <input type="password" name="password" id="password" placeholder="Your Password*" style="width:100%">
-														<span class="field_error" id="password_error"></span>
-                          </div>
-
-                          <div class="dark-btn">
-                            <button type="button" class="fv-btn" onclick="user_register()">Register</button>
-                          </div>
-
-                        </form>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-
-							<?php } ?>
-              <div class="<?php echo $accordion_class?>">
-                Address Information
-              </div>
-							<form method="post">
 								<div class="accordion__body">
-									<div class="bilinfo">
-												
+									<div class="accordion__body__form">
+
 										<div class="row">
-											<div class="col-md-12">
-												<div class="single-input">
-													<input type="text" name="address" placeholder="Street Address" required>
+
+											<div class="col-md-6">
+												<div class="checkout-method__login">
+													<form id="login-form" method="post">
+														<h5 class="checkout-method__title">Login</h5>
+
+														<div class="single-input">
+															<input type="text" name="login_email" id="login_email" placeholder="Your Email*" style="width:100%">
+															<span class="field_error" id="login_email_error"></span>
+														</div>
+																
+														<div class="single-input">
+															<input type="password" name="login_password" id="login_password" placeholder="Your Password*" style="width:100%">
+															<span class="field_error" id="login_password_error"></span>
+														</div>
+																
+														<p class="require">* Required fields</p>
+
+														<div class="dark-btn">
+															<button type="button" class="fv-btn" onclick="user_login()">Login</button>
+														</div>
+
+														<div class="form-output login_msg">
+															<p class="form-messege field_error"></p>
+														</div>
+
+													</form>
+											</div>
+											</div>
+
+
+
+											<div class="col-md-6">
+												<div class="checkout-method__login">
+													<form action="#">
+
+														<h5 class="checkout-method__title">Register</h5>
+
+														<div class="single-input">
+															<input type="text" name="name" id="name" placeholder="Your Name*" style="width:100%">
+															<span class="field_error" id="name_error"></span>
+														</div>
+														<div class="single-input">
+															<input type="text" name="email" id="email" placeholder="Your Email*" style="width:100%">
+															<span class="field_error" id="email_error"></span>
+														</div>
+																
+														<div class="single-input">
+															<input type="text" name="mobile" id="mobile" placeholder="Your Mobile*" style="width:100%">
+															<span class="field_error" id="mobile_error"></span>
+														</div>
+
+														<div class="single-input">
+															<input type="password" name="password" id="password" placeholder="Your Password*" style="width:100%">
+															<span class="field_error" id="password_error"></span>
+														</div>
+
+														<div class="dark-btn">
+															<button type="button" class="fv-btn" onclick="user_register()">Register</button>
+														</div>
+
+													</form>
 												</div>
 											</div>
 
-											<div class="col-md-6">
-												<div class="single-input">
-													<input type="text" name="city" placeholder="City/State" required>
-												</div>
-											</div>
-
-											<div class="col-md-6">
-												<div class="single-input">
-													<input type="text" name="pincode" placeholder="Post code/ zip" required>
-												</div>
-											</div>
-														
 										</div>
-												
+
 									</div>
 								</div>
+							<?php } ?>
+							
+
+							<form method="post">
 								<div class="<?php echo $accordion_class?>">
-									payment information
+									Address Information
 								</div>
+
+								<div class="accordion__body">
+									<div class="bilinfo">									
+													
+										<div class="row">
+												<div class="col-md-12">
+													<div class="single-input">
+														<input type="text" name="address" placeholder="Street Address" required>
+													</div>
+												</div>
+
+												<div class="col-md-6">
+													<div class="single-input">
+														<input type="text" name="city" placeholder="City/State" required>
+													</div>
+												</div>
+
+												<div class="col-md-6">
+													<div class="single-input">
+														<input type="text" name="pincode" placeholder="Post code/ zip" required>
+													</div>
+												</div>
+															
+										</div>
+													
+									</div>
+								</div>
+
+								<div class="<?php echo $accordion_class?>">
+										payment information
+								</div>
+
 								<div class="accordion__body">
 									<div class="paymentinfo">
 
 										<div class="single-method">
-											COD <input type="radio" name="payment_type" value="COD" required/>
+											Cash on Delivery <input type="radio" name="payment_type" value="COD" required/>
 											&nbsp;&nbsp;PayU <input type="radio" name="payment_type" value="payu" required/>
 										</div>
 
 										<div class="single-method">
-												  
+															
 										</div>
 
 									</div>
@@ -219,6 +229,8 @@
 
 								<input type="submit" name="submit"/>
 							</form>
+							
+					
 
             </div>
           </div>
@@ -248,7 +260,7 @@
 
               <div class="single-item__content">
                 <a href="#"><?php echo $pname?></a>
-                <span class="price"><?php echo $price*$qty?></span>
+                <span class="price">Rs. <?php echo $price*$qty?></span>
             	</div>
 
             	<div class="single-item__remove">
@@ -261,7 +273,7 @@
           </div>
 					<div class="ordre-details__total">
 						<h5>Order total</h5>
-						<span class="price"><?php echo $cart_total?></span>
+						<span class="price">Rs. <?php echo $cart_total?></span>
 					</div>
 
       	</div>
