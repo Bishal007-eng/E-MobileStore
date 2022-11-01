@@ -53,10 +53,10 @@
                                 <div class="ft__inner">
                                     <ul class="ft__list">
                                         <li><a href="#">My Account</a></li>
-                                        <li><a href="cart.html">My Cart</a></li>
+                                        <li><a href="cartphp">My Cart</a></li>
                                         <li><a href="#">Login</a></li>
-                                        <li><a href="wishlist.html">Wishlist</a></li>
-                                        <li><a href="checkout.html">Checkout</a></li>
+                                        <li><a href="wishlist.php">Wishlist</a></li>
+                                        <li><a href="checkout.php">Checkout</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -70,10 +70,10 @@
                                 <div class="ft__inner">
                                     <ul class="ft__list">
                                         <li><a href="#">My Account</a></li>
-                                        <li><a href="cart.html">My Cart</a></li>
+                                        <li><a href="cart.php">My Cart</a></li>
                                         <li><a href="#">Login</a></li>
-                                        <li><a href="wishlist.html">Wishlist</a></li>
-                                        <li><a href="checkout.html">Checkout</a></li>
+                                        <li><a href="wishlist.php">Wishlist</a></li>
+                                        <li><a href="checkout.php">Checkout</a></li>
                                     </ul>
                                 </div>
                             </div>
