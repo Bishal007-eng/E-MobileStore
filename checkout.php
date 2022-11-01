@@ -92,7 +92,7 @@
 								$accordion_class='accordion__title';
 								if(!isset($_SESSION['USER_LOGIN'])){
 								$accordion_class='accordion__hide';
-							?>
+								?>
 
 								<div class="accordion__title">
 									Checkout Method
@@ -176,6 +176,7 @@
 							
 
 							<form method="post">
+								
 								<div class="<?php echo $accordion_class?>">
 									Address Information
 								</div>
