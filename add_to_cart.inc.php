@@ -1,5 +1,6 @@
 <?php
 	class add_to_cart{
+		
 		function addProduct($pid,$qty)
 		{
 			$_SESSION['cart'][$pid]['qty']=$qty;
@@ -43,7 +44,7 @@
 			{
 				return 0;
 			}
-			
+
 			
 		}
 
