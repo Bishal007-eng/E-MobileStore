@@ -2904,13 +2904,13 @@ a.shipping-calculator-button:hover{
     color: #444;
 }
 .wishlist-table table .product-add-to-cart > a {
-    background: #252525 none repeat scroll 0 0;
+    background: #0019c9ad none repeat scroll 0 0;
     color: #fff;
     display: block;
     font-weight: 700;
     padding: 10px 56px;
     text-transform: uppercase;
-    width: 260px;
+    width: 200px;
 }
 .wishlist-table table .product-add-to-cart > a:hover{
     background: #c43b68;
