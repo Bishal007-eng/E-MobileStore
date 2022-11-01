@@ -99,7 +99,11 @@
                             <div class="sin__desc align--left">
                                 <p><span>Categories:</span></p>
                                 <ul class="pro__cat__list">
-                                    <li><a href="#"><?php echo $get_product['0']['categories']?>,</a></li>
+                                    <li>
+                                        <a href="javascript:void(0)" onclick="add_to_cart('<?php echo $get_product['0']['id']?>','add')">
+                                            <?php echo $get_product['0']['categories'] ?>
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                                     
