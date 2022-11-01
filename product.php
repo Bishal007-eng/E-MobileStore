@@ -100,9 +100,7 @@
                                 <p><span>Categories:</span></p>
                                 <ul class="pro__cat__list">
                                     <li>
-                                        <a href="javascript:void(0)" onclick="add_to_cart('<?php echo $get_product['0']['id']?>','add')">
-                                            <?php echo $get_product['0']['categories'] ?>
-                                        </a>
+                                        <a href="#"><?php echo $get_product['0']['categories']?></a>
                                     </li>
                                 </ul>
                             </div>
@@ -110,7 +108,7 @@
                         </div>
 									
                     </div>
-					<a class="fr__btn" href="#">Add to cart</a>
+					<a class="fr__btn" href="javascript:void(0)" onclick="manage_cart('<?php echo $get_product['0']['id']?>','add')">Add to cart</a>
                 </div>
             </div>
         </div>
