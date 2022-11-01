@@ -262,7 +262,7 @@
 }
 .fr__pro__prize li.old__prize {
     color: #888888;
-    text-decoration: line-through;
+    text-decoration: red line-through;
 }
 
 /*---------------------------------------
