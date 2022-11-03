@@ -489,6 +489,7 @@
     color: #888888;
     font-weight: 400;
     padding-right: 12px;
+    text-decoration: red line-through;
 }
 .htc__product__area {
     padding-top: 60px;

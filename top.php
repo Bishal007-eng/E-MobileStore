@@ -14,6 +14,18 @@
   $obj=new add_to_cart();
   $totalProduct=$obj->totalProduct();
 
+  if(isset($_SESSION['USER_LOGIN'])){
+    $uid=$_SESSION['USER_ID'];
+    
+    if(isset($_GET['wishlist_id'])){
+      $wid=get_safe_value($con,$_GET['wishlist_id']);
+      mysqli_query($con,"delete from wishlist where id='$wid' and user_id='$uid'");
+    }
+  
+    $wishlist_count=mysqli_num_rows(mysqli_query($con,"select product.name,product.image,product.price,product.mrp,wishlist.id 
+      from product,wishlist where wishlist.product_id=product.id and wishlist.user_id='$uid'"));
+  }
+
 ?>
 
 <!doctype html>
@@ -33,6 +45,11 @@
 			<link rel="stylesheet" href="css/responsive.css">
 			<link rel="stylesheet" href="css/custom.css">
 		<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+
+
+    
+
+
 	</head>
 <body>
 
@@ -51,6 +68,8 @@
                   <a href="index.php">E-Mobile Shop</a>
                 </div>
               </div>
+
+              
               <div class="col-md-7 col-lg-6 col-sm-5 col-xs-3">
                 <nav class="main__menu__nav hidden-xs hidden-sm">
                   <ul class="main__menu">
@@ -87,7 +106,7 @@
 							
 
 
-              <div class="col-md-3 col-lg-3 col-sm-4 col-xs-4">
+              <div class="col-md-3 col-lg-4 col-sm-4 col-xs-4">
                 <div class="header__right">
                   <div class="header__search search search__open">
                     <a href="#"><i class="icon-magnifier icons"></i></a>
@@ -112,8 +131,14 @@
 
                   &nbsp;
                   <div class="htc__shopping__cart">
-                    <a class="cart__menu" href="#"><i class="icon-handbag icons"></i></a>
-                    <a href="cart.php"><span class="htc__qua"><?php echo $totalProduct?></span></a>
+                  <?php
+										if(isset($_SESSION['USER_ID'])){
+										?>
+										<a href="wishlist.php"><i class="icon-heart icons"></i></a>
+                    <a href="wishlist.php"><span class="htc__wishlist"><?php echo $wishlist_count ?></span></a>
+										<?php } ?> &nbsp;
+                    <a href="cart.php"><i class="icon-handbag icons"></i></a>
+                    <a href="cart.php"><span class="htc__qua"><?php echo $totalProduct ?></span></a>
                   </div>
                 </div>
               </div>

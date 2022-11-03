@@ -46,33 +46,39 @@
 									if(isset($_SESSION['cart']))
                                     {
 									    foreach($_SESSION['cart'] as $key=>$val){
-									    $productArr=get_product($con,'','',$key);
-									    $pname=$productArr[0]['name'];
-									    $mrp=$productArr[0]['mrp'];
-									    $price=$productArr[0]['price'];
-									    $image=$productArr[0]['image'];
-									    $qty=$val['qty'];
-								?>
-										<tr>
-											<td class="product-thumbnail"><a href="#"><img src="<?php echo PRODUCT_IMAGE_SITE_PATH.$image?>"  /></a></td>
-											<td class="product-name"><a href="#"><?php echo $pname?></a>
-												<ul  class="pro__prize">
-													<li class="old__prize"><?php echo $mrp?></li>
-													<li>Rs. <?php echo $price?></li>
-												</ul>
-											</td>
+                                            $productArr=get_product($con,'','',$key);
+                                            $pname=$productArr[0]['name'];
+                                            $mrp=$productArr[0]['mrp'];
+                                            $price=$productArr[0]['price'];
+                                            $image=$productArr[0]['image'];
+                                            $qty=$val['qty'];
+								            ?>
+                                                <tr>
+                                                    <td class="product-thumbnail">
+                                                        <a href="#"><img src="<?php echo PRODUCT_IMAGE_SITE_PATH.$image?>" /></a>
+                                                    </td>
 
-											<td class="product-price"><span class="amount">Rs. <?php echo $price?></span></td>
-											<td class="product-quantity"><input type="number" id="<?php echo $key?>qty" value="<?php echo $qty?>" />
-											    <br/><a href="javascript:void(0)" onclick="manage_cart('<?php echo $key?>','update')">update</a>
-											</td>
-											<td class="product-subtotal">Rs. <?php echo $qty*$price?></td>
-											<td class="product-remove">
-                                                <a href="javascript:void(0)" onclick="manage_cart('<?php echo $key?>','remove')"><i class="icon-trash icons"></i></a>
-                                            </td>
-										</tr>
+                                                    <td class="product-name"><a href="#"><?php echo $pname?></a>
+                                                        <ul  class="pro__prize">
+                                                            <li class="old__prize"><?php echo $mrp?></li>
+                                                            <li>Rs. <?php echo $price?></li>
+                                                        </ul>
+                                                    </td>
 
-									<?php } } ?>
+                                                    <td class="product-price"><span class="amount">Rs. <?php echo $price?></span></td>
+                                                    <td class="product-quantity"><input type="number" id="<?php echo $key?>qty" value="<?php echo $qty?>" />
+                                                        <br/><a href="javascript:void(0)" onclick="manage_cart('<?php echo $key?>','update')">update</a>
+                                                    </td>
+                                                    <td class="product-subtotal">Rs. <?php echo $qty*$price ?></td>
+                                                    <td class="product-remove">
+                                                        <a href="javascript:void(0)" onclick="manage_cart('<?php echo $key?>','remove')"><i class="icon-trash icons"></i></a>
+                                                    </td>
+                                                </tr>
+
+									        <?php 
+                                        } 
+                                    } 
+                                ?>
                             </tbody>
 
                         </table>

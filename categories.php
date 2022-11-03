@@ -116,6 +116,17 @@
 													<img src="<?php echo PRODUCT_IMAGE_SITE_PATH.$list['image']?>" alt="product images" style="height:250px ;">
 												</a>
 											</div>
+
+                                            <div class="fr__hover__info">
+                                                <ul class="product__action">
+                                                    <li><a href="javascript:void(0)" onclick="wishlist_manage('<?php echo $list['id'] ?>','add')"><i class="icon-heart icons"></i></a></li>
+
+                                                    <li><a href="javascript:void(0)" onclick="manage_cart('<?php echo $list['id'] ?>','add')">
+                                                        <i class="icon-handbag icons"></i></a>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
 												
 											<div class="fr__product__inner">
 												<h4><a href="product-details.html"><?php echo $list['name']?></a></h4>
