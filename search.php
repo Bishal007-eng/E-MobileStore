@@ -38,8 +38,8 @@
         </div>
     </div>
 </div>
-<!-- End Bradcaump area -->
-<!-- Start Product Grid -->
+
+
 <section class="htc__product__grid bg__white ptb--100">
     <div class="container">
         <div class="row">
@@ -58,7 +58,7 @@
 								    <div class="category">
 										<div class="ht__cat__thumb">
 											<a href="product.php?id=<?php echo $list['id']?>">
-												<img src="<?php echo PRODUCT_IMAGE_SITE_PATH.$list['image']?>" alt="product images">
+												<img src="<?php echo PRODUCT_IMAGE_SITE_PATH.$list['image']?>" alt="product images" style="height:250px ;">
 											</a>
 										</div>
 												

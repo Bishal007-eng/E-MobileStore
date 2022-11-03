@@ -1,24 +1,61 @@
 <?php 
-    require('top.php');
+  	require('top.php');
 
-    if(isset($_GET['id']) && $_GET['id']!=''){
-        $cat_id=mysqli_real_escape_string($con,$_GET['id']);
-        if($cat_id>0){
-            $get_product=get_product($con,'',$cat_id);
-        }else{
-            ?>
-            <script>
-            window.location.href='index.php';
-            </script>
-            <?php
-        }
-    }else{
+    if(!isset($_GET['id']) && $_GET['id']!=''){
         ?>
-        <script>
-        window.location.href='index.php';
-        </script>
+          <script>
+          window.location.href='index.php';
+          </script>
         <?php
-    }										
+    }
+  
+    $cat_id=mysqli_real_escape_string($con,$_GET['id']);
+  
+    $price_high_selected="";
+    $price_low_selected="";
+    $new_selected="";
+    $old_selected="";
+    $sort_order="";
+    
+    if(isset($_GET['sort']))
+    {
+        $sort=mysqli_real_escape_string($con,$_GET['sort']);
+
+        if($sort=="price_high")
+        {
+            $sort_order=" order by product.price desc ";
+            $price_high_selected="selected";	
+        }
+        if($sort=="price_low")
+        {
+            $sort_order=" order by product.price asc ";
+            $price_low_selected="selected";
+        }
+        if($sort=="new")
+        {
+            $sort_order=" order by product.id desc ";
+            $new_selected="selected";
+        }
+        if($sort=="old")
+    {
+            $sort_order=" order by product.id asc ";
+            $old_selected="selected";
+        }
+  
+    }
+  
+    if($cat_id>0)
+    {
+          $get_product=get_product($con,'',$cat_id,'','',$sort_order);
+    }
+    else
+    {
+        ?>
+          <script>
+            window.location.href='index.php';
+          </script>
+        <?php
+    }											
 ?>
 
 
@@ -54,11 +91,12 @@
                     <div class="htc__product__rightidebar">
                         <div class="htc__grid__top">
                             <div class="htc__select__option">
-                                <select class="ht__select">
-                                    <option>Default softing</option>
-                                    <option>Sort by popularity</option>
-                                    <option>Sort by average rating</option>
-                                    <option>Sort by newness</option>
+                                <select class="ht__select" onchange="sort_product_drop('<?php echo $cat_id?>','<?php echo SITE_PATH?>')" id="sort_product_id">
+                                    <option value="">Default softing</option>
+                                    <option value="price_low" <?php echo $price_low_selected?>>Sort by price low to hight</option>
+                                    <option value="price_high" <?php echo $price_high_selected?>>Sort by price high to low</option>
+                                    <option value="new" <?php echo $new_selected?>>Sort by new first</option>
+									<option value="old" <?php echo $old_selected?>>Sort by old first</option>
                                 </select>
                             </div>
                                
@@ -75,7 +113,7 @@
 										<div class="category">
 											<div class="ht__cat__thumb">
 												<a href="product.php?id=<?php echo $list['id']?>">
-													<img src="<?php echo PRODUCT_IMAGE_SITE_PATH.$list['image']?>" alt="product images">
+													<img src="<?php echo PRODUCT_IMAGE_SITE_PATH.$list['image']?>" alt="product images" style="height:250px ;">
 												</a>
 											</div>
 												

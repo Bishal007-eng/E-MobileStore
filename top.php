@@ -87,8 +87,11 @@
 							
 
 
-              <div class="col-md-3 col-lg-3 col-sm-1 col-xs-5">
+              <div class="col-md-3 col-lg-3 col-sm-4 col-xs-4">
                 <div class="header__right">
+                  <div class="header__search search search__open">
+                    <a href="#"><i class="icon-magnifier icons"></i></a>
+                  </div> &nbsp; &nbsp;
                   <div class="header__account">
                     <?php 
                       if(isset($_SESSION['USER_LOGIN']))
@@ -107,6 +110,7 @@
 
                   </div>
 
+                  &nbsp;
                   <div class="htc__shopping__cart">
                     <a class="cart__menu" href="#"><i class="icon-handbag icons"></i></a>
                     <a href="cart.php"><span class="htc__qua"><?php echo $totalProduct?></span></a>
@@ -119,3 +123,24 @@
         </div>
       </div>
     </header>
+
+    <div class="body__overlay"></div>
+		<div class="offset__wrapper">
+      <div class="search__area">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="search__inner">
+                <form action="search.php" method="get">
+                  <input placeholder="Search here... " type="text" name="str">
+                  <button type="submit"></button>
+                </form>
+                <div class="search__close__btn">
+                  <span class="search__close__btn_icon"><i class="zmdi zmdi-close"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
