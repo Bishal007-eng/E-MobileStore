@@ -148,7 +148,8 @@
                             <div class="fr__hover__info">
                                 <ul class="product__action">
                                     <li><a href="javascript:void(0)" onclick="wishlist_manage('<?php echo $list['id'] ?>','add')">
-                                    <i class="icon-heart icons"></i></a></li>
+                                        <i class="icon-heart icons"></i></a>
+                                    </li>
 
 
                                 </ul>
@@ -198,7 +199,9 @@
                         </div>
                         <div class="fr__hover__info">
                             <ul class="product__action">
-                                <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
+                                    <li><a href="javascript:void(0)" onclick="wishlist_manage('<?php echo $list['id'] ?>','add')">
+                                        <i class="icon-heart icons"></i></a>
+                                    </li>
 
                                 <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
 
