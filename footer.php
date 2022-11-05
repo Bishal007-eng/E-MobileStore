@@ -53,8 +53,8 @@
                                 <div class="ft__inner">
                                     <ul class="ft__list">
                                         <li><a href="#">My Account</a></li>
-                                        <li><a href="cartphp">My Cart</a></li>
-                                        <li><a href="#">Login</a></li>
+                                        <li><a href="cart.php">My Cart</a></li>
+                                        <li><a href="login.php">Login</a></li>
                                         <li><a href="wishlist.php">Wishlist</a></li>
                                         <li><a href="checkout.php">Checkout</a></li>
                                     </ul>
@@ -69,9 +69,9 @@
                                 <h2 class="title__line--2">Our service</h2>
                                 <div class="ft__inner">
                                     <ul class="ft__list">
-                                        <li><a href="#">My Account</a></li>
+                                        <li><a href="my_order.php">My Account</a></li>
                                         <li><a href="cart.php">My Cart</a></li>
-                                        <li><a href="#">Login</a></li>
+                                        <li><a href="login.php">Login</a></li>
                                         <li><a href="wishlist.php">Wishlist</a></li>
                                         <li><a href="checkout.php">Checkout</a></li>
                                     </ul>
@@ -88,7 +88,7 @@
                                     <div class="news__input">
                                         <input type="text" placeholder="Your Mail*">
                                         <div class="send__btn">
-                                            <a class="fr__btn" href="#">Send Mail</a>
+                                            <a class="fr__btn" href="contact.php">Send Mail</a>
                                         </div>
                                     </div>
                                             

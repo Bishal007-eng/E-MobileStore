@@ -57,7 +57,9 @@
                                 <tbody>
 									<?php
 										$uid=$_SESSION['USER_ID'];
-										$res=mysqli_query($con,"select distinct(order_detail.id) ,order_detail.*,product.name,product.image from order_detail,product ,`order` where order_detail.order_id='$order_id' and `order`.user_id='$uid' and order_detail.product_id=product.id");
+										$res=mysqli_query($con,"select distinct(order_detail.id) ,order_detail.*,product.name,product.image 
+                                        from order_detail,product ,`order` 
+                                        where order_detail.order_id='$order_id' and `order`.user_id='$uid' and order_detail.product_id=product.id");
 										$total_price=0;
 										while($row=mysqli_fetch_assoc($res)){
 										$total_price=$total_price+($row['qty']*$row['price']);
